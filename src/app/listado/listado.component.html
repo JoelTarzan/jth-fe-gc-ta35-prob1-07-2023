@@ -1,0 +1,21 @@
+<h2>Listado de clientes</h2>
+<ng-container *ngIf="clientes.length != 0">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>CIF</th>
+                <th>Direccion</th>
+                <th>Grupo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.cif}}</td>
+                <td>{{cliente.direccion}}</td>
+                <td>{{cliente.grupo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</ng-container>
